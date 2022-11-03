@@ -19,6 +19,7 @@ li{
 body{
     background-color: var(--secondary);
     overflow-x: hidden;
+    font-family: 'Rubik Regular';
 }
 
 .button{
@@ -36,8 +37,41 @@ body{
     color: #222;
     background: var(--primary);
 }
+input,textarea{
+    background: rgba(225,225,225,0.05);
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 2px solid #9893D8;
+    color: #f2f2f2;
+}
 
 /* font */
+@font-face{
+    font-family: 'Rubik Regular';
+    src: url('assets/fonts/Rubik-Regular.ttf');
+}
+
+h1,h2,h3,h4{
+    color: #DDDBFF;
+    font-weight: normal;
+}
+
+p,a,li{
+    color: #9893D8;
+}
+
+h1,h3{
+    font-size: 1.2em;
+}
+h2{
+    font-size: 1.6em;
+}
+h3{
+    font-size: 1.1em;
+}
+.leading{
+    font-size: 1.1em;
+}
 
 /* mobile style */
 
@@ -50,11 +84,15 @@ body{
 /* large tablets & laptop styles */
 
 @media screen and (min-width:960px) {
-
+    body{
+        font-size: 18px;
+    }
 }
 
 /* desktop styles */
 
 @media screen and (min-width:1200px) {
-
+    body{
+        font-size: 20px;
+    }
 }
